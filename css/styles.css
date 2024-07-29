@@ -1,0 +1,176 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bde0fe; /* Background color for the whole page */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #a2d2ff; /* Header background color */
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: #ffafcc 3px solid; /* Bottom border color for header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 180px; /* Slightly larger logo */
+    height: auto;
+    margin-left: 10px; /* Margin from the left side */
+}
+
+header nav {
+    flex-grow: 1;
+    text-align: right;
+    margin-right: 20px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffafcc; /* Hover color for nav links */
+}
+
+header select {
+    padding: 5px;
+    margin-left: 20px;
+    background-color: #ffc8dd; /* Background color for the language selector */
+    border: 2px solid #ffafcc; /* Border color for the language selector */
+    border-radius: 5px;
+    color: #333; /* Text color */
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header select:hover {
+    background-color: #ffafcc; /* Hover background color */
+    color: #ffffff; /* Hover text color */
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%; /* Reduced size of the background image */
+    height: auto;
+    opacity: 0.8;
+    margin: auto; /* Center the image horizontally */
+}
+
+.hero .hero-text {
+    position: absolute;
+    top: 40%; /* Adjusted top position */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em; /* Increased text size */
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+.hero .hero-subtext {
+    position: absolute;
+    top: 55%; /* Adjusted top position */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em; /* Increased subtext size */
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+main {
+    padding: 40px 20px;
+    background-color: #ffc8dd; /* Main section background color */
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.featured-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.featured-content article {
+    background: #cdb4db; /* Featured content background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-basis: 45%;
+    min-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease; /* Added border-radius transition */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.featured-content article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; /* Ensure border-radius is maintained on hover */
+}
+
+.featured-content article h2 {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #a2d2ff; /* Footer background color */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer .social-media {
+    list-style: none;
+    padding: 0;
+}
+
+footer .social-media li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer .social-media li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+footer .social-media li a:hover {
+    color: #ffafcc;
+}

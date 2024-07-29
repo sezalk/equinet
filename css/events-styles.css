@@ -1,0 +1,187 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bde0fe; /* Background color for the whole page */
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #a2d2ff; /* Header background color */
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: #ffafcc 3px solid; /* Bottom border color for header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 180px; /* Slightly larger logo */
+    height: auto;
+    margin-left: 10px; /* Margin from the left side */
+}
+
+header nav {
+    flex-grow: 1;
+    text-align: right;
+    margin-right: 20px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffafcc; /* Hover color for nav links */
+}
+
+header select {
+    padding: 5px;
+    margin-left: 20px;
+    background-color: #cdb4db;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header select:hover {
+    background-color: #bde0fe;
+}
+
+header select:focus {
+    outline: none;
+    background-color: #ffafcc;
+    color: #ffffff;
+}
+
+main {
+    padding: 20px;
+    background-color: #ffc8dd; /* Main section background color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.month-selector {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.month-selector select {
+    padding: 10px;
+    background-color: #cdb4db;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.month-selector select:hover {
+    background-color: #bde0fe;
+}
+
+.month-selector select:focus {
+    outline: none;
+    background-color: #ffafcc;
+    color: #ffffff;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.calendar-day {
+    padding: 20px;
+    background-color: #cdb4db;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.calendar-day h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.calendar-day p {
+    margin-top: 10px;
+}
+
+.calendar-day:hover {
+    transform: scale(1.05);
+}
+
+#upcoming-events {
+    margin-top: 20px;
+}
+
+#upcoming-events ul {
+    list-style: none;
+    padding: 0;
+}
+
+#upcoming-events ul li {
+    background-color: #cdb4db;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #a2d2ff; /* Footer background color */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer .social-media {
+    list-style: none;
+    padding: 0;
+}
+
+footer .social-media li {
+    display: inline;
+    margin-right: 5px;
+}
+
+footer .social-media li a {
+    color: #ffffff;
+    text-decoration: none;
+}

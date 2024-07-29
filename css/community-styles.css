@@ -1,0 +1,206 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bde0fe; /* Background color for the whole page */
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #a2d2ff; /* Header background color */
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: #ffafcc 3px solid; /* Bottom border color for header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 180px; /* Slightly larger logo */
+    height: auto;
+    margin-left: 10px; /* Margin from the left side */
+}
+
+header nav {
+    flex-grow: 1;
+    text-align: right;
+    margin-right: 20px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffafcc; /* Hover color for nav links */
+}
+
+header select {
+    padding: 10px;
+    margin-left: 20px;
+    background-color: #cdb4db;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+header select:hover {
+    background-color: #ffafcc;
+    color: #ffffff;
+}
+
+header select:focus {
+    outline: none;
+    background-color: #bde0fe;
+}
+
+.main-content {
+    padding: 20px;
+    background-color: #ffc8dd; /* Main section background color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.discussion, .gallery {
+    margin-bottom: 40px;
+}
+
+.discussion h1, .gallery h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.discussion-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#discussion-input {
+    width: 100%;
+    max-width: 600px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid #cdb4db;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#submit-discussion {
+    background-color: #a2d2ff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit-discussion:hover {
+    background-color: #ffafcc;
+}
+
+#discussion-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.discussion-post {
+    width: 100%;
+    max-width: 600px;
+    background-color: #cdb4db;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Increase the minimum size */
+    gap: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* Maintain aspect ratio */
+}
+
+.gallery-item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 110%; /* Increase the height to zoom in */
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img.landscape {
+    width: 110%; /* Increase the width to zoom in */
+    height: auto;
+}
+
+.gallery-item img:hover {
+    transform: translate(-50%, -50%) scale(1.2); /* Zoom effect on hover */
+}
+
+footer {
+    background-color: #a2d2ff; /* Footer background color */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer .social-media {
+    list-style: none;
+    padding: 0;
+}
+
+footer .social-media li {
+    display: inline;
+    margin-right: 5px;
+}
+
+footer .social-media li a {
+    color: #ffffff;
+    text-decoration: none;
+}

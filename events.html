@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equinet - Events</title>
+    <link rel="stylesheet" href="css/events-styles.css">
+    <script defer src="js/events-scripts.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Equinet Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="events.html">Events</a></li>
+                
+            </ul>
+        </nav>
+        <select id="language-selector">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+            <!-- Add more languages as needed -->
+        </select>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Events Calendar</h1>
+            <div class="month-selector">
+                <label for="month-select">Choose Month:</label>
+                <select id="month-select">
+                    <option value="0">January</option>
+                    <option value="1">February</option>
+                    <option value="2">March</option>
+                    <option value="3">April</option>
+                    <option value="4">May</option>
+                    <option value="5">June</option>
+                    <option value="6">July</option>
+                    <option value="7">August</option>
+                    <option value="8">September</option>
+                    <option value="9">October</option>
+                    <option value="10">November</option>
+                    <option value="11">December</option>
+                </select>
+            </div>
+            <div id="calendar"></div>
+            <h2>Upcoming Events - August 2024</h2>
+            <div id="upcoming-events">
+                <ul>
+                    <li>August 5, 2024 - Women's Health Workshop</li>
+                    <li>August 10, 2024 - Job Fair for Differently Abled</li>
+                    <li>August 15, 2024 - Independence Day Celebration</li>
+                    <li>August 20, 2024 - Legal Aid Camp</li>
+                    <li>August 25, 2024 - LGBTQ+ Support Group Meeting</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Contact us: contact@equinet.org</p>
+            <ul class="social-media">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <!-- Add more social media links as needed -->
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

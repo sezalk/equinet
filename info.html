@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equinet - Info</title>
+    <link rel="stylesheet" href="css/info-styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script defer src="js/info-scripts.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Equinet Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+        <select id="language-selector">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+            <!-- Add more languages as needed -->
+        </select>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#category-women">Women</a></li>
+                <li><a href="#category-lgbtq">LGBTQ+</a></li>
+                <li><a href="#category-rural">Rural Communities</a></li>
+                <li><a href="#category-disabled">People with Disabilities</a></li>
+                <!-- Add more categories as needed -->
+            </ul>
+        </aside>
+        <main class="main-content">
+            <h1>Articles</h1>
+            
+            <!-- Category: Women -->
+            <section id="category-women">
+                <h2>Women</h2>
+                <article>
+                    <h3>Empowering Women through Education</h3>
+                    <p>Education is a powerful tool that can break the cycle of poverty and empower women to achieve their full potential. Access to quality education helps women gain knowledge, skills, and self-confidence.</p>
+                </article>
+                <article>
+                    <h3>Healthcare for Women</h3>
+                    <p>Ensuring access to healthcare services for women is crucial for their overall well-being. This includes maternal health services, reproductive health education, and preventive care.</p>
+                </article>
+            </section>
+
+            <!-- Category: LGBTQ+ -->
+            <section id="category-lgbtq">
+                <h2>LGBTQ+</h2>
+                <article>
+                    <h3>Supporting LGBTQ+ Rights</h3>
+                    <p>Advocating for the rights of LGBTQ+ individuals is essential for achieving social justice and equality. This includes legal protections, anti-discrimination policies, and promoting inclusivity.</p>
+                </article>
+                <article>
+                    <h3>Mental Health Resources for LGBTQ+</h3>
+                    <p>Mental health support is crucial for LGBTQ+ individuals who may face unique challenges and stigmatization. Providing accessible mental health resources can improve their overall well-being.</p>
+                </article>
+            </section>
+
+            <!-- Category: Rural Communities -->
+            <section id="category-rural">
+                <h2>Rural Communities</h2>
+                <article>
+                    <h3>Bridging the Digital Divide</h3>
+                    <p>Access to digital technologies and the internet is essential for rural communities to connect with the world. Initiatives to provide affordable internet access and digital literacy programs are crucial.</p>
+                </article>
+                <article>
+                    <h3>Improving Rural Healthcare</h3>
+                    <p>Healthcare access in rural areas can be challenging. Mobile clinics, telemedicine, and training local healthcare providers can help improve healthcare services in these communities.</p>
+                </article>
+            </section>
+
+            <!-- Category: People with Disabilities -->
+            <section id="category-disabled">
+                <h2>People with Disabilities</h2>
+                <article>
+                    <h3>Inclusive Education for All</h3>
+                    <p>Education systems need to be inclusive and accessible for students with disabilities. This includes providing special education services, adaptive technologies, and trained educators.</p>
+                </article>
+                <article>
+                    <h3>Accessible Infrastructure</h3>
+                    <p>Ensuring that public infrastructure is accessible for people with disabilities is vital for their independence and participation in society. This includes ramps, elevators, and accessible transportation.</p>
+                </article>
+            </section>
+
+            <h1>Resources</h1>
+            <section class="resources">
+                <p>Resource 1: Free Educational Programs for Women - <a href="#">Learn More</a></p>
+                <p>Resource 2: Mental Health Support for LGBTQ+ - <a href="#">Learn More</a></p>
+                <p>Resource 3: Telemedicine Services in Rural Areas - <a href="#">Learn More</a></p>
+                <p>Resource 4: Assistive Technologies for People with Disabilities - <a href="#">Learn More</a></p>
+                <!-- Add more resources as needed -->
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="container">
+            <p>Contact us: contact@equinet.org</p>
+            <ul class="social-media">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <!-- Add more social media links as needed -->
+            </ul>
+        </div>
+    </footer>
+    
+    <!-- Chatbot Section -->
+    <!-- Chatbot Section -->
+<button class="chatbot-toggler">
+    <span class="material-symbols-rounded">mode_comment</span>
+    <span class="material-symbols-outlined">close</span>
+</button>
+<div class="chatbot">
+    <header>
+        <h2>Chatbot</h2>
+        <span class="close-btn material-symbols-outlined">close</span>
+    </header>
+    <ul class="chatbox">
+        <li class="chat incoming">
+            <span class="material-symbols-outlined">smart_toy</span>
+            <p>Hi there 👋<br>How can I help you today?</p>
+        </li>
+    </ul>
+    <div class="chat-input">
+        <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+        <button id="send-btn" class="material-symbols-rounded">send</button>
+    </div>
+</div>
+
+    <script src="js/script.js" defer></script>
+    </body>
+</html>
